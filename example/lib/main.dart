@@ -1,36 +1,29 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+import 'package:flutter/material.dart';
+import 'package:stage_navigation_bar/stage_navigation_bar.dart';
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+void main() => runApp(const MyApp());
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
-[![pub package](https://img.shields.io/badge/pub-v0.0.1-blue)](https://pub.dev/packages/stage_navigation_bar)
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        textTheme: const TextTheme(
+          bodyMedium: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ),
+      title: 'Stage Navigation Bar Example',
+      home: const StageNavigationBarExample(),
+    );
+  }
+}
 
-A beautiful navigation bar with animation when select navigation bar item.
-
-<img src="https://github.com/mu7mmd/stage_navigation_bar/main/doc/assets/home-screenshot.png" width="300" alt="Home Screenshot">
-
-## Getting started
-
-```yaml
-dependencies:
-  stage_navigation_bar: ^0.0.1 #latest version
-```
-
-To get started, place your `StageNavigationBar` to the
-bottomNavigationBar slot of a Scaffold. Or in the bottom of your main page view. It works with 2 or
-more navigation elements.
-
-## Simple Usage
-
-```dart
 class StageNavigationBarExample extends StatefulWidget {
   const StageNavigationBarExample({super.key});
 
@@ -89,4 +82,3 @@ class _StageNavigationBarExampleState extends State<StageNavigationBarExample> {
     );
   }
 }
-```
