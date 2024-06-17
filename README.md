@@ -15,7 +15,7 @@ and the Flutter guide for
 
 A beautiful navigation bar with animation when select navigation bar item.
 
-<img src="https://github.com/mu7mmd/stage_navigation_bar/main/doc/assets/home-screenshot.png" width="300" alt="Home Screenshot">
+<img src="https://github.com/mu7mmd/stage_navigation_bar/blob/develop/doc/assets/home-screenshot.png" width="300" alt="Home Screenshot">
 
 ## Getting started
 
