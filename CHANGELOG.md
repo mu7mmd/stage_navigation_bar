@@ -10,3 +10,7 @@
 
 - Update assets path in README.md.
 - Update LICENSE to MIT License.
+
+## 0.0.1+3 - 19/06/2024
+
+- Update README.md assets.
