@@ -17,7 +17,7 @@ and the Flutter guide for
 
 A beautiful navigation bar with animation when select item.
 
-![Bottom Entering](https://raw.githubusercontent.com/mu7mmd/stage_navigation_bar/main/doc/assets/bottom-entering-indicator.gif)
+![Top Entering](https://raw.githubusercontent.com/mu7mmd/stage_navigation_bar/main/doc/assets/top-entering-indicator.gif)
 
 ## Table of contents
 
@@ -149,8 +149,6 @@ itemEntering: StageNavigationEntering.bottom
 [Pub Example Project](https://pub.dev/packages/stage_navigation_bar/example)
 
 [Github Example Project](https://github.com/mu7mmd/stage_navigation_bar/tree/main/example)
-
-<img src="https://raw.githubusercontent.com/mu7mmd/stage_navigation_bar/main/doc/assets/screenshot.png" alt="Screenshot" style="width: 300px;" />
 
 ## 👨🏻‍💻 Contributors <a name="contributors"></a>
 
