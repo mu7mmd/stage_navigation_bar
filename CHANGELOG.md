@@ -1,3 +1,12 @@
-## 0.0.1
+## 0.0.1 - 19/06/2024
 
-* Initial version, 19.06.2024
+- Initial version.
+
+## 0.0.1+1 - 19/06/2024
+
+- Update assets path in README.md.
+
+## 0.0.1+2 - 19/06/2024
+
+- Update assets path in README.md.
+- Update LICENSE to MIT License.

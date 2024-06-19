@@ -17,7 +17,7 @@ and the Flutter guide for
 
 A beautiful navigation bar with animation when select item.
 
-![Bottom Entering](https://github.com/mu7mmd/stage_navigation_bar/blob/main/doc/assets/bottom-entering-indicator.gif)
+![Bottom Entering](https://raw.githubusercontent.com/mu7mmd/stage_navigation_bar/main/doc/assets/bottom-entering-indicator.gif)
 
 ## Table of contents
 
@@ -125,26 +125,24 @@ onTap: (index){
 
 ## 🕹 Showcase <a name="showcase"></a>
 
-**StageNavigationEntering**
+### `StageNavigationEntering`
 
 ```dart
 itemEntering: StageNavigationEntering.top
 ```
+![Top Entering](https://raw.githubusercontent.com/mu7mmd/stage_navigation_bar/main/doc/assets/top-entering-indicator.gif)
 
-![Top Entering](https://github.com/mu7mmd/stage_navigation_bar/blob/main/doc/assets/top-entering-indicator.gif)
 ---
 ```dart
 itemEntering: StageNavigationEntering.center
 ```
+![Center Entering](https://raw.githubusercontent.com/mu7mmd/stage_navigation_bar/main/doc/assets/center-entering-indicator.gif)
 
-![Center Entering](https://github.com/mu7mmd/stage_navigation_bar/blob/main/doc/assets/center-entering-indicator.gif)
 ---
-
 ```dart
 itemEntering: StageNavigationEntering.bottom
 ```
-
-![Bottom Entering](https://github.com/mu7mmd/stage_navigation_bar/blob/main/doc/assets/bottom-entering-indicator.gif)
+![Bottom Entering](https://raw.githubusercontent.com/mu7mmd/stage_navigation_bar/main/doc/assets/bottom-entering-indicator.gif)
 
 ## 📱 Example Project <a name="example"></a>
 
@@ -152,7 +150,7 @@ itemEntering: StageNavigationEntering.bottom
 
 [Github Example Project](https://github.com/mu7mmd/stage_navigation_bar/tree/main/example)
 
-<img src="https://github.com/mu7mmd/stage_navigation_bar/blob/main/doc/assets/screenshot.png" alt="Screenshot" style="width: 300px;" />
+<img src="https://raw.githubusercontent.com/mu7mmd/stage_navigation_bar/main/doc/assets/screenshot.png" alt="Screenshot" style="width: 300px;" />
 
 ## 👨🏻‍💻 Contributors <a name="contributors"></a>
 
