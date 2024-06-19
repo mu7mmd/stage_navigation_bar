@@ -1,5 +1,5 @@
 name: stage_navigation_bar
-description: "A Flutter package for beautiful navigation bar with animation when select navigation bar item."
+description: "A Flutter package for beautiful navigation bar with animation when select item."
 version: 0.0.1+2
 homepage: https://github.com/mu7mmd/stage_navigation_bar
 repository: https://github.com/mu7mmd/stage_navigation_bar
