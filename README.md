@@ -24,7 +24,8 @@ A beautiful navigation bar with animation when select item.
 1. [Installing](#installing)
 2. [How To Use](#how_to_use)
 3. [Showcase](#showcase)
-4. [Example](#example)
+4. [Example Project](#example)
+5. [Contributors](#contributors)
 
 ## 🖥  Installing <a name="installing"></a>
 
@@ -145,14 +146,14 @@ itemEntering: StageNavigationEntering.bottom
 
 ![style1](doc/assets/bottom-entering-indicator.gif)
 
-## 📱 Example <a name="example"></a>
+## 📱 Example Project <a name="example"></a>
 
 [Pub Example Project](https://pub.dev/packages/stage_navigation_bar/example)
 
 [Github Example Project](https://github.com/mu7mmd/stage_navigation_bar/tree/main/example)
 
-![style1](doc/assets/screenshot.png)
+<img src="doc/assets/screenshot.png" alt="Image" style="width: 300px;" />
 
-## 👨🏻‍💻 Contributors
+## 👨🏻‍💻 Contributors <a name="contributors"></a>
 
 Mohammad Alamoudi [@mu7mmd](https://github.com/mu7mmd)
