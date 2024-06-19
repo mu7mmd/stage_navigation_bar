@@ -11,7 +11,9 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-![Static Badge](https://img.shields.io/badge/pub-v0.0.1-blue?logo=dart&link=https%3A%2F%2Fpub.dev%2Fpackages%2Fstage_navigation_bar) ![Static Badge](https://img.shields.io/badge/github-mu7mmd-black?logo=github&link=https%3A%2F%2Fgithub.com%2Fmu7mmd) ![Static Badge](https://img.shields.io/badge/linkedin-3mdy-blue?logo=linkedin&link=https%3A%2F%2Fwww.linkedin.com%2Fin%2F3mdy)
+![Static Badge](https://img.shields.io/badge/pub-v0.0.1-blue?logo=dart&link=https%3A%2F%2Fpub.dev%2Fpackages%2Fstage_navigation_bar)
+![Static Badge](https://img.shields.io/badge/github-mu7mmd-black?logo=github&link=https%3A%2F%2Fgithub.com%2Fmu7mmd)
+![Static Badge](https://img.shields.io/badge/linkedin-3mdy-blue?logo=linkedin&link=https%3A%2F%2Fwww.linkedin.com%2Fin%2F3mdy)
 
 A beautiful navigation bar with animation when select item.
 
@@ -24,7 +26,7 @@ A beautiful navigation bar with animation when select item.
 3. [Showcase](#showcase)
 4. [Example](#example)
 
-1. ## Installing <a name="installing"></a>
+## 🖥  Installing <a name="installing"></a>
 
 ### Add Dependency
 ```yaml
@@ -37,12 +39,12 @@ dependencies:
 import 'package:stage_navigation_bar/stage_navigation_bar.dart';
 ```
 
-2. ## How To Use <a name="how_to_use"></a>
+## ℹ️ How To Use <a name="how_to_use"></a>
 
 Place your `StageNavigationBar` to the `bottomNavigationBar` slot of a `Scaffold`. Or in the bottom
 of your main page view.
 
-**It works with 2 or more navigation items.**
+**❗️ It works with 2 or more navigation items.**
 
 ### Code
 ```dart
@@ -120,30 +122,37 @@ onTap: (index){
 }
 ```
 
-3. ## Showcase <a name="showcase"></a>
+## 🕹 Showcase <a name="showcase"></a>
 
 **StageNavigationEntering**
 
-`itemEntering = StageNavigationEntering.top`
+```dart
+itemEntering: StageNavigationEntering.top
+```
 
 ![style1](doc/assets/top-entering-indicator.gif)
-
 ---
-
-`itemEntering = StageNavigationEntering.center`
+```dart
+itemEntering: StageNavigationEntering.center
+```
 
 ![style1](doc/assets/center-entering-indicator.gif)
-
 ---
 
-`itemEntering = StageNavigationEntering.bottom`
+```dart
+itemEntering: StageNavigationEntering.bottom
+```
 
 ![style1](doc/assets/bottom-entering-indicator.gif)
 
-4. ## Example <a name="example"></a>
+## 📱 Example <a name="example"></a>
 
-[Example Project](https://pub.dev/packages/stage_navigation_bar/example)
+[Pub Example Project](https://pub.dev/packages/stage_navigation_bar/example)
 
-5. ## Contributors
+[Github Example Project](https://github.com/mu7mmd/stage_navigation_bar/tree/main/example)
 
-Mohammad Alamoudi @mu7mmd
+![style1](doc/assets/screenshot.png)
+
+## 👨🏻‍💻 Contributors
+
+Mohammad Alamoudi [@mu7mmd](https://github.com/mu7mmd)
