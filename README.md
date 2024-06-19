@@ -17,7 +17,7 @@ and the Flutter guide for
 
 A beautiful navigation bar with animation when select item.
 
-![style1](doc/assets/top-entering-indicator.gif)
+![Bottom Entering](https://github.com/mu7mmd/stage_navigation_bar/blob/main/doc/assets/bottom-entering-indicator.gif)
 
 ## Table of contents
 
@@ -131,20 +131,20 @@ onTap: (index){
 itemEntering: StageNavigationEntering.top
 ```
 
-![style1](doc/assets/top-entering-indicator.gif)
+![Top Entering](https://github.com/mu7mmd/stage_navigation_bar/blob/main/doc/assets/top-entering-indicator.gif)
 ---
 ```dart
 itemEntering: StageNavigationEntering.center
 ```
 
-![style1](doc/assets/center-entering-indicator.gif)
+![Center Entering](https://github.com/mu7mmd/stage_navigation_bar/blob/main/doc/assets/center-entering-indicator.gif)
 ---
 
 ```dart
 itemEntering: StageNavigationEntering.bottom
 ```
 
-![style1](doc/assets/bottom-entering-indicator.gif)
+![Bottom Entering](https://github.com/mu7mmd/stage_navigation_bar/blob/main/doc/assets/bottom-entering-indicator.gif)
 
 ## 📱 Example Project <a name="example"></a>
 
