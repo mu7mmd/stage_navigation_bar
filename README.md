@@ -152,7 +152,7 @@ itemEntering: StageNavigationEntering.bottom
 
 [Github Example Project](https://github.com/mu7mmd/stage_navigation_bar/tree/main/example)
 
-<img src="doc/assets/screenshot.png" alt="Image" style="width: 300px;" />
+<img src="https://github.com/mu7mmd/stage_navigation_bar/blob/main/doc/assets/screenshot.png" alt="Screenshot" style="width: 300px;" />
 
 ## 👨🏻‍💻 Contributors <a name="contributors"></a>
 
