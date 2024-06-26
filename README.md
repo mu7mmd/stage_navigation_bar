@@ -12,7 +12,7 @@ and the Flutter guide for
 -->
 
 ![Static Badge](https://img.shields.io/badge/pub-v0.0.1-blue?logo=dart&link=https%3A%2F%2Fpub.dev%2Fpackages%2Fstage_navigation_bar)
-![Static Badge](https://img.shields.io/badge/github-mu7mmd-green?logo=github&link=https%3A%2F%2Fgithub.com%2Fmu7mmd)
+![Static Badge](https://img.shields.io/badge/github-mu7mmd-limegreen?logo=github&link=https%3A%2F%2Fgithub.com%2Fmu7mmd)
 ![Static Badge](https://img.shields.io/badge/linkedin-3mdy-blue?logo=linkedin&link=https%3A%2F%2Fwww.linkedin.com%2Fin%2F3mdy)
 
 A beautiful navigation bar with animation when select item.
