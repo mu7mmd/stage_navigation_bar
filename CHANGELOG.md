@@ -14,3 +14,12 @@
 ## 0.0.1+3 - 19/06/2024
 
 - Update README.md assets.
+
+## 0.0.1+4 - 19/06/2024
+
+- Update description in pubspec.yaml.
+
+## 0.0.1+5 - 26/06/2024
+
+- Add v0.0.1+4 changelog in CHANGELOG.md.
+- Update github badge color in README.md.
