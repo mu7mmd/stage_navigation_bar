@@ -14,3 +14,7 @@
 ## 0.0.1+3 - 19/06/2024
 
 - Update README.md assets.
+
+## 0.0.1+4 - 19/06/2024
+
+- Update description in pubspec.yaml.
