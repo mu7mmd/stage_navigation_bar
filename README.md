@@ -110,8 +110,8 @@ class _StageNavigationBarExampleState extends State<StageNavigationBarExample> {
 - `indicatorHeight = 5`,
 - `itemPadding = const EdgeInsets.all(0)`,
 - `duration = const Duration(milliseconds: 200)`,
-- `selectedIndicatorBorderRadius: default value depends on 'itemEntering' value`,
-- `unselectedIndicatorBorderRadius: default value depends on 'itemEntering' value`,
+- `selectedIndicatorBorderRadius: default value depends on 'animationDirection' value`,
+- `unselectedIndicatorBorderRadius: default value depends on 'animationDirection' value`,
 
 ### IndicatorAnimationDirection Values
 ```dart
