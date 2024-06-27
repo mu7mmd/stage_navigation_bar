@@ -11,13 +11,13 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-![Static Badge](https://img.shields.io/badge/pub-v0.0.1-blue?logo=dart&link=https%3A%2F%2Fpub.dev%2Fpackages%2Fstage_navigation_bar)
+![Static Badge](https://img.shields.io/badge/pub-v0.1.0-blue?logo=dart&link=https%3A%2F%2Fpub.dev%2Fpackages%2Fstage_navigation_bar)
 ![Static Badge](https://img.shields.io/badge/github-mu7mmd-limegreen?logo=github&link=https%3A%2F%2Fgithub.com%2Fmu7mmd)
 ![Static Badge](https://img.shields.io/badge/linkedin-3mdy-blue?logo=linkedin&link=https%3A%2F%2Fwww.linkedin.com%2Fin%2F3mdy)
 
 A beautiful navigation bar with animation when select item.
 
-![Top Entering](https://raw.githubusercontent.com/mu7mmd/stage_navigation_bar/main/doc/assets/top-entering-indicator.gif)
+![Top To Bottom](https://raw.githubusercontent.com/mu7mmd/stage_navigation_bar/main/doc/assets/top-to-bottom.gif)
 
 ## Table of contents
 
@@ -32,7 +32,7 @@ A beautiful navigation bar with animation when select item.
 ### Add Dependency
 ```yaml
 dependencies:
-  stage_navigation_bar: ^0.0.1 #latest version
+  stage_navigation_bar: ^0.1.0 #latest version
 ```
 
 ### Import Package
@@ -44,8 +44,6 @@ import 'package:stage_navigation_bar/stage_navigation_bar.dart';
 
 Place your `StageNavigationBar` to the `bottomNavigationBar` slot of a `Scaffold`. Or in the bottom
 of your main page view.
-
-**❗️ It works with 2 or more navigation items.**
 
 ### Code
 ```dart
@@ -85,35 +83,44 @@ class _StageNavigationBarExampleState extends State<StageNavigationBarExample> {
 ```
 
 ### Properties
-- `itemEntering`: Define the animation move shape when tap.
-- `alignment`: Alignment of the item inside the shadow colors.
-- `itemHeight`: The height of each item.
-- `indicatorHeight`: Indicator height.
-- `indicatorColor`*: The color of the indicator and the shadow degrees.
-- `selectedIndex`*: Current selected index.
-- `items`*: `StageNavigationBar` items, must be >= 2.
-- `onTap`*: On item tap.
+- `animationDirection`: Define the animation move shape when tap.
+- `alignment`: Alignment of the items.
+- `barHeight`: `StageNavigationBar` height.
 - `barWidth`: `StageNavigationBar` width.
-- `itemPadding`: The padding of each item.
+- `indicatorHeight`: Indicator line height.
+- `itemPadding`: Each item padding.
+- `duration`: Indicator animation Transition duration.
+- `selectedIndex`*: Current selected index.
+- `indicatorColor`*: Color of the indicator and the gradient.
+- `onTap`*: On item tap.
 - `barPadding`?: `StageNavigationBar` internal padding.
 - `barMargin`?: `StageNavigationBar` external padding.
-- `duration`: The transition duration.
 - `decoration`?: `StageNavigationBar` box decoration.
+- `selectedIndicatorBorderRadius`?: Selected item indicator border radius.
+- `unselectedIndicatorBorderRadius`?: Unselected item indicator border radius.
+- `items`!: `StageNavigationBar` items, List of widget.
+- `itemsCount`!: Items count for `itemBuilder` callback.
+- `itemBuilder`!: Callback will be called with indices greater than or equal to zero and less than `itemsCount`.
 
 ### Default values
-- `itemEntering = StageNavigationEntering.top`,
+- `animationDirection = IndicatorAnimationDirection.topToBottom`,
 - `alignment = Alignment.center`,
-- `itemHeight = 60`,
-- `indicatorHeight = 5`,
+- `barHeight = 60`,
 - `barWidth = double.infinity`
+- `indicatorHeight = 5`,
 - `itemPadding = const EdgeInsets.all(0)`,
 - `duration = const Duration(milliseconds: 200)`,
+- `selectedIndicatorBorderRadius: default value depends on 'itemEntering' value`,
+- `unselectedIndicatorBorderRadius: default value depends on 'itemEntering' value`,
 
-### StageNavigationEntering Values
+### IndicatorAnimationDirection Values
 ```dart
-StageNavigationEntering.top
-StageNavigationEntering.center
-StageNavigationEntering.bottom
+IndicatorAnimationDirection.top
+IndicatorAnimationDirection.topToBottom
+IndicatorAnimationDirection.centerToTop
+IndicatorAnimationDirection.centerToBottom
+IndicatorAnimationDirection.bottom
+IndicatorAnimationDirection.bottomToTop
 ```
 
 ### Event
@@ -125,28 +132,47 @@ onTap: (index){
 
 ## 🕹 Showcase <a name="showcase"></a>
 
-### `StageNavigationEntering`
+### `IndicatorAnimationDirection`
 
 ```dart
-itemEntering: StageNavigationEntering.top
+animationDirection: IndicatorAnimationDirection.top
 ```
-![Top Entering](https://raw.githubusercontent.com/mu7mmd/stage_navigation_bar/main/doc/assets/top-entering-indicator.gif)
-
----
-```dart
-itemEntering: StageNavigationEntering.center
-```
-![Center Entering](https://raw.githubusercontent.com/mu7mmd/stage_navigation_bar/main/doc/assets/center-entering-indicator.gif)
+![Top](https://raw.githubusercontent.com/mu7mmd/stage_navigation_bar/main/doc/assets/top.gif)
 
 ---
 ```dart
-itemEntering: StageNavigationEntering.bottom
+animationDirection: IndicatorAnimationDirection.topToBottom
 ```
-![Bottom Entering](https://raw.githubusercontent.com/mu7mmd/stage_navigation_bar/main/doc/assets/bottom-entering-indicator.gif)
+![Top To Bottom](https://raw.githubusercontent.com/mu7mmd/stage_navigation_bar/main/doc/assets/top-to-bottom.gif)
+
+---
+```dart
+animationDirection: IndicatorAnimationDirection.centerToTop
+```
+![Center To Top](https://raw.githubusercontent.com/mu7mmd/stage_navigation_bar/main/doc/assets/center-to-top.gif)
+
+---
+```dart
+animationDirection: IndicatorAnimationDirection.centerToBottom
+```
+![Center To Bottom](https://raw.githubusercontent.com/mu7mmd/stage_navigation_bar/main/doc/assets/center-to-bottom.gif)
+
+---
+```dart
+animationDirection: IndicatorAnimationDirection.bottom
+```
+![Bottom](https://raw.githubusercontent.com/mu7mmd/stage_navigation_bar/main/doc/assets/bottom.gif)
+
+---
+```dart
+animationDirection: IndicatorAnimationDirection.bottomToTop
+```
+![Bottom To Top](https://raw.githubusercontent.com/mu7mmd/stage_navigation_bar/main/doc/assets/bottom-to-top.gif)
+
 
 ## 📱 Example Project <a name="example"></a>
 
-[Pub Example Project](https://pub.dev/packages/stage_navigation_bar/example)
+[Pub Example](https://pub.dev/packages/stage_navigation_bar/example)
 
 [Github Example Project](https://github.com/mu7mmd/stage_navigation_bar/tree/main/example)
 

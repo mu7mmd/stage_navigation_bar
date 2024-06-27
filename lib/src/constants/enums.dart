@@ -1,3 +1,10 @@
 part of '../stage_navigation_bar.dart';
 
-enum StageNavigationEntering { top, center, bottom }
+enum IndicatorAnimationDirection {
+  top,
+  topToBottom,
+  centerToTop,
+  centerToBottom,
+  bottom,
+  bottomToTop
+}
