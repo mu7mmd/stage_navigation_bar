@@ -36,6 +36,13 @@ class _StageNavigationBarExampleState extends State<StageNavigationBarExample> {
   /// Your initial page
   int _selectedIndex = 0;
 
+  final _icons = [
+    Icons.home_filled,
+    Icons.favorite,
+    Icons.search,
+    Icons.person
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -54,6 +61,29 @@ class _StageNavigationBarExampleState extends State<StageNavigationBarExample> {
           Center(child: Text('Profile Page')),
         ],
       ),
+      // bottomNavigationBar: StageNavigationBar.builder(
+      //   barPadding: EdgeInsets.only(
+      //     bottom: MediaQuery.of(context).viewPadding.bottom,
+      //   ),
+      //   decoration: const BoxDecoration(
+      //     color: Colors.deepPurple,
+      //     border: Border(
+      //       top: BorderSide(color: Colors.purpleAccent),
+      //     ),
+      //   ),
+      //   itemsCount: 4,
+      //   itemBuilder: (context, index) => Icon(
+      //     _icons[index],
+      //     color: index == _selectedIndex ? Colors.amber : Colors.white,
+      //   ),
+      //   selectedIndex: _selectedIndex,
+      //   indicatorColor: Colors.amber,
+      //   onTap: (int index) {
+      //     setState(() {
+      //       _selectedIndex = index;
+      //     });
+      //   },
+      // ),
       bottomNavigationBar: StageNavigationBar(
         barPadding: EdgeInsets.only(
           bottom: MediaQuery.of(context).viewPadding.bottom,
@@ -64,13 +94,7 @@ class _StageNavigationBarExampleState extends State<StageNavigationBarExample> {
             top: BorderSide(color: Colors.purpleAccent),
           ),
         ),
-        // barMargin: MediaQuery.of(context).viewPadding,
-        items: const [
-          Icon(Icons.home_filled, color: Colors.white),
-          Icon(Icons.favorite, color: Colors.white),
-          Icon(Icons.search, color: Colors.white),
-          Icon(Icons.person, color: Colors.white),
-        ],
+        items: _icons.map((icon) => Icon(icon, color: Colors.white)).toList(),
         selectedIndex: _selectedIndex,
         indicatorColor: Colors.amber,
         onTap: (int index) {
