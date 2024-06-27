@@ -23,3 +23,13 @@
 
 - Add v0.0.1+4 changelog in CHANGELOG.md.
 - Update github badge color in README.md.
+
+## 0.1.0 - 27/06/2024
+
+- Add named constructor `StageNavigationBar.builder`.
+- Add more indicator animation transitions `IndicatorAnimationDirection`.
+- Accept `items` and `itemsCount` greater or equal to 0. 
+- Enhance some codes.
+- Enhances in code structure.
+- Update README.md.
+- Update example project.
